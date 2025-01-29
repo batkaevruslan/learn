@@ -10,7 +10,7 @@ x-ms-meta-name:string-value
 
 Beginning with version 2009-09-19, metadata names must adhere to the naming rules for C# identifiers. 
 
-Names are case-insensitive. Metadata names preserve the case with which they were created, but are case-insensitive when set or read. If two or more metadata headers with the same name are submitted for a resource, the Blob service returns status code `400 (Bad Request)`. 
+Names are case-insensitive. Metadata names preserve the case with which they were created, but are case-insensitive when set or read. If two or more metadata headers with the same name are submitted for a resource, Blob storage comma-separates and concatenates the two values and returns HTTP response code `200 (OK)`.
 
 The metadata consists of name/value pairs. The total size of all metadata pairs can be up to 8 KB in size. 
 
